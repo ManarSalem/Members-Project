@@ -1,0 +1,28 @@
+spring:
+  datasource:
+     url: jdbc:postgresql://localhost:5432/dtmember
+     username: postgres
+     password: 199810
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      show-sql: true
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+server:
+  error:
+    include-message: always
+
+#  logging:
+#    level:
+#      com:
+#        example: TRACE
+#    file:
+#      path: .
+#      name: logginLog.log
+#    pattern:
+#      file: %d [%level] %c{1.} {%t} %m%n
+#      console: %d [%level] %c{1.} {%t} %m%n
